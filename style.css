@@ -1,0 +1,79 @@
+style.css
+
+html {
+    box-sizing:content-box;
+    
+   }
+   
+body {
+   background-color: #eae6e6;
+   
+}
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+
+ }
+
+li {
+   float: left;
+ }
+
+li a {
+   display: block;
+   text-align: center;
+   padding: 14px 103px;
+   background-color: rgb(171, 196, 201);
+   color: black;
+ }
+
+li a:hover {
+ background-color: #1d4e89;
+ }
+
+h1 {
+   color: rgb(15, 85, 29);
+   font-family:'Times New Roman', Times, serif;
+   font-size:xx-large;
+   text-align: center;
+  }
+
+img {
+   text-align: left;
+   width: 200px; 
+   padding-left: 43%;
+
+}
+
+label {
+   display: block;
+   margin: 10px 0;
+   color: #333;
+   font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+
+textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+input[type="submit"] {
+   background-color: #8f4e4e;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+   background-color: #623232;
+}
