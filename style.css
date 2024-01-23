@@ -7,7 +7,10 @@ html {
    
 body {
    background-color: #eae6e6;
-   
+   border-width: 3px;
+   border-radius: 30px;
+   width: 1300px;
+   margin: 40px auto;
 }
 
 ul {
@@ -65,15 +68,17 @@ textarea {
    border-radius: 5px;
 }
 
-input[type="submit"] {
+button{
    background-color: #8f4e4e;
    color: #fff;
    border: none;
    padding: 10px 20px;
    border-radius: 5px;
    cursor: pointer;
+   display: block !important;
 }
 
-input[type="submit"]:hover {
+button:hover {
    background-color: #623232;
 }
+

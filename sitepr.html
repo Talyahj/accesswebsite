@@ -39,17 +39,27 @@
             <option value="sliceoflife">Slice of life</option>
             <option value="Documentaire">Documentaire</option>
             <option value="Bollywood">Bollywood</option>
-        </select><br><br><br><br>
-</br></br></br></br>
-</br></br></br></br>
-</br></br></br></br>
-</br></br></br></br>
-
-        <label for="comments">Comments:</label><br>
+        </select>
+<br><br><br><br>
+    </form>
+ <label for="comments">Comments:</label><br>
         <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
 
-        <input type="submit" value="Submit">
-    </form>
+        <button id="mon-bouton">Envoyer la réponse</button>
+        <div id="mon-alerte" role="alert"></div>
+        <script type="text/template" id="contenu-alerte">
+            <p>Ceci est une alerte</p>
+        </script>
+    <script>
+        let monBouton = document.querySelector('#mon-bouton');
+        monBouton.addEventListener('click', afficherAlerte);
 
+        function afficherAlerte() {
+            let monAlerte = document.querySelector('#mon-alerte');
+            let contenuAlerte = document.querySelector('#contenu-alerte').innerHTML;
+
+            monAlerte.innerHTML = contenuAlerte;
+        } 
+    </script>
     </body>
 </html>
